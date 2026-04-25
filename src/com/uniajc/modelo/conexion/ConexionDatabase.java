@@ -1,9 +1,9 @@
 package com.uniajc.modelo.conexion;
 
+import java.io.FileInputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.Properties;
-import java.io.FileInputStream;
 
 public class ConexionDatabase {
 
@@ -15,8 +15,12 @@ public class ConexionDatabase {
             String url = props.getProperty("db.url");
             String user = props.getProperty("db.user");
             String password = props.getProperty("db.password");
+            String driver = props.getProperty("db.driver");
 
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            // 👇 VERIFICACIÓN (IMPORTANTE)
+            System.out.println("PASSWORD: " + password);
+
+            Class.forName(driver);
 
             return DriverManager.getConnection(url, user, password);
 

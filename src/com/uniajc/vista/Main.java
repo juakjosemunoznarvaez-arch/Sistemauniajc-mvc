@@ -11,7 +11,7 @@ public class Main {
         System.out.println("1. Crear Materia");
         System.out.println("2. Crear Docente");
         System.out.println("3. Crear Estudiante");
-
+        System.out.println("4. Crear Grupo");
         int opcion = sc.nextInt();
         sc.nextLine();
 
@@ -27,6 +27,10 @@ public class Main {
             VistaEstudiante ve = new VistaEstudiante();
             ve.menu();
         } 
+        else if (opcion == 4) {
+            VistaGrupo vg = new VistaGrupo();
+            vg.menu();
+}
         else {
             System.out.println("Opción inválida");
         }

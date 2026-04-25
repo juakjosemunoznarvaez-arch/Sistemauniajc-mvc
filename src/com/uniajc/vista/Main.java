@@ -1,7 +1,7 @@
 package com.uniajc.vista;
 
 import java.util.Scanner;
-
+import com.uniajc.vista.VistaGrupo;
 public class Main {
 
     public static void main(String[] args) {

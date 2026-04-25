@@ -2,7 +2,6 @@ package com.uniajc.modelo.dao;
 
 import com.uniajc.modelo.conexion.ConexionDatabase;
 import com.uniajc.modelo.entidad.Materia;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
@@ -17,6 +16,8 @@ public class MateriaDAO {
             ps.setString(1, materia.getNombreMateria());
             ps.setInt(2, materia.getCreditos());
             ps.executeUpdate();
+
+            System.out.println("Materia guardada correctamente");
 
         } catch (Exception e) {
             e.printStackTrace();

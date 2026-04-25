@@ -10,7 +10,7 @@ public class ConexionDatabase {
             return DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/uniajc",
                 "root",
-                "123456"
+                "3137013098"
             );
         } catch (Exception e) {
             e.printStackTrace();

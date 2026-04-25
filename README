@@ -1,4 +1,13 @@
 
+integrantes:
+Daniela Andrea Gomez
+Juan Jose Muñoz Narvaez 
+
+
+
+
+
+
 
 CREATE DATABASE IF NOT EXISTS uniajc;
 USE uniajc;

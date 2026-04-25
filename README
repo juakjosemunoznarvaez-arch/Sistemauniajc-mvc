@@ -1,0 +1,44 @@
+
+
+CREATE DATABASE IF NOT EXISTS uniajc;
+USE uniajc;
+
+DROP TABLE IF EXISTS grupo;
+DROP TABLE IF EXISTS estudiante;
+DROP TABLE IF EXISTS docente;
+DROP TABLE IF EXISTS materia;
+
+CREATE TABLE materia (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_materia VARCHAR(100),
+    creditos INT
+);
+
+
+CREATE TABLE docente (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    especialidad VARCHAR(100)
+);
+
+
+CREATE TABLE estudiante (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    programa VARCHAR(100)
+);
+
+
+CREATE TABLE grupo (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_materia INT,
+    id_docente INT,
+    aula VARCHAR(50),
+    horario VARCHAR(50)
+);
+
+
+select * from docente;
+select * from materia;
+select * from estudiante;
+select * from grupo;
